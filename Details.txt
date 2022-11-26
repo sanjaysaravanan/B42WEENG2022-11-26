@@ -1,0 +1,185 @@
+
+Recap for CodeKata Sessions:
+
+  datatypes:
+    Primitive DataTypes: number(integer), string, 
+
+  variables: var, let, const
+    name given to a memory location, storing a data in a memory
+    js variables can be declared by using var, let, const
+
+    syntax: var <variable-name> = some-value; let <variable-name> = some-value;
+    const <variable-name> = some-value;
+
+    declaration: specifying type of variable
+    assignment/initialization: giving/changing some value of a type of varaiable
+
+    Declaration ---> tell what it is, var, let, const
+      eg: 
+        var x; ---> declaration
+        let y; ---> declaration
+    Initialization ---> assigning values to the declared variable
+      eg:
+        x = 10;
+        y = 100;
+        const z = 999; // const should be declared & initialized in single line
+
+    var age; // declaration
+    age = 23; // initialization/assignment
+
+
+    var age=23; // declaration and initialization // gloable scope
+    let name="guvi"; // blocked scope
+
+    const mark = 99; // const should declared and initialized on a single line
+    // output statements
+    console.log(name, age);
+
+
+
+    questions on datatype
+    typeof <variable-name>, returns a string indication of the data-type
+    console.log(typeof age);  
+
+    const is a constant variable which can be assigned only once
+    const PI = 3.1412; 
+
+  scopes:
+    global ---> parent scope every scopes ()
+
+    function ( inside function (){} )
+
+    block {}
+
+  {} ---> block of lines
+
+  [] ---> Array of elements/accessing values of array
+
+  () ---> methods/functions  
+
+  function -->
+      a set of statements into single method/function
+      return can be used to return a value
+
+  Operators:
+
+    arithematic Operators: +,-,*,/, 
+    % ( modulus gives remainder of a division operations  )
+      eg: 
+        5 % 3 --> 2
+        107 % 10 --> 7
+        107 % 9 --> 8
+
+    Assignment: =
+
+    Logical: &(and), |(or), !(not/negation), &&, ||
+    compariason: >, <, >=, <=, !=, == ( comparison without type ), === ( comparison with type )
+    Boolean: true or false
+
+  Conditional if else statements:
+    if () {
+
+    } else if () {
+
+    } else {
+
+    }
+
+  looping:
+    for(Initialization; condition; inc/dec) {
+
+    }
+
+    eg: print 10 numbers
+                  0 -> 9
+      for(var i = 0; i < 10; i++) {
+        console.log(i); // 
+      }
+
+    var batchName = "B42WEENG"; // GNEEW24B
+    // length of the string ---> 
+    // 0 1 2 3 4 5 6 7
+    // B 4 2 W E E N G
+    var l = batchName.length;
+    for(var i = l-1; i >= 0; i-- ) {
+      console.log(batchName[i]);
+    }
+    
+
+  Array:
+    array.join(); join array of string with separator
+
+  String:
+    string.split(); split tring into array of string/chars  
+
+  reverse(); usedin array only
+
+  .join() ---> used only for array
+
+  Number() ---> string to number
+
+  Nuber to String
+      number.toString() --> number to string
+      Adding an empty string: adding a number to string will give concatenated string output
+
+  Object or Dictionary ( data storing variable ) 
+        key <-> value pair
+        {
+          name: 'Sanjay',
+          role: 'Developer',
+          desgination: 'Software Engineer'
+        }
+  
+  get all keys from obj --> Object.keys(<obj-name>)
+
+    built-in methods to reverse array ---> arr.reverse(); // modifies and reverses the array
+
+    built-in methods to string --> toUpperCase, toLowerCase
+    String:
+        str.trim() --> removes both the initial and trailing spaces
+
+    
+  while loop: while is used as entry controlled loop
+    incremental while
+    decremental while
+
+  different ways add elements into an array:
+    using index
+    built methods
+      push ->  Appends new elements to the end of an array, and returns the new length of the array.
+      pop  -> Removes the last element from an array and returns it. If the array is empty, undefined is returned and the array is not modified.
+  
+  switch case: multiple cases can be checked
+  syntax:
+    switch(value) {
+      case c1:
+        // execute case 1 statements
+        break;
+      case c2:
+        // execute case 2 statements
+        break;
+      default:
+        // execute default statments
+    }
+
+  Array Problems - Basic Algorithms
+    1. Searching
+    2. Loop inside loop
+    3. Sum Of Arrays
+    4. Largest of an array
+    5. Smallest of an array
+
+
+  frequency of number/chars in array or string
+  use obj to capture frequency of numbers/chars in array or string 
+
+  Prime Number
+
+// Money Save Problem
+Months - Amount
+  0       1000
+  1       1000
+  2       2000
+  3       3000
+  4       5000
+  5       8000
